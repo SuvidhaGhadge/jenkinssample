@@ -8,6 +8,7 @@ pipeline {
     agent any
     tools {
         maven 'Maven_Local'
+        JDK 'Java81'
     }
     parameters {
         string(name: 'SDLC_ENV', defaultValue: '', description: 'Enter SDLC Environment')
